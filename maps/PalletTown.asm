@@ -63,6 +63,9 @@ PalletTownGrassWarningScript:
 .HasPokemon:
 	end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/PalletTown.asm"
+else
 PalletTownTeacherText:
 	text "I'm raising #-"
 	line "mon too."
@@ -121,3 +124,4 @@ PalletTownNoPokemonYetText:
 	para "before heading"
 	line "out."
 	done
+endc

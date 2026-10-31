@@ -37,6 +37,10 @@ RGBLINKVCFLAGS = -Weverything -M -n $(ROM_NAME)_vc.sym -m $(ROM_NAME)_vc.map -p 
 RGBFIXFLAGS    = -Weverything -csjv -t $(TITLE) -i $(MCODE) -n $(ROMVERSION) -p $(FILLER) -k 01 -l 0x33 -m MBC3+TIMER+RAM+BATTERY -r 3
 RGBGFXFLAGS    = -Weverything
 
+ifeq ($(filter french,$(MAKECMDGOALS)),french)
+MODIFIERS := $(MODIFIERS)-french
+RGBASMFLAGS += -D_LOCALE_FR
+endif
 ifeq ($(filter faithful,$(MAKECMDGOALS)),faithful)
 MODIFIERS := $(MODIFIERS)-faithful
 RGBASMFLAGS += -DFAITHFUL
@@ -96,12 +100,13 @@ crystal_obj    := $(rom_obj:.o=.o)
 crystal_vc_obj := $(rom_obj:.o=_vc.o)
 
 .SUFFIXES:
-.PHONY: clean tidy crystal faithful pocket debug monochrome freespace tools bsp huffman vc
+.PHONY: clean tidy crystal french faithful pocket debug monochrome freespace tools bsp huffman vc
 .PRECIOUS: %.2bpp %.1bpp
 .SECONDARY:
 .DEFAULT_GOAL: crystal
 
 crystal: $$(ROM_NAME).$$(EXTENSION)
+french: crystal
 faithful: crystal
 monochrome: crystal
 noir: crystal

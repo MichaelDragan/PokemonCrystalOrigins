@@ -181,7 +181,11 @@ WhirlIslandsName:      rawchar "Whirl¯Islands@"
 MtMortarName:          rawchar "Mt.Mortar@"
 DragonsDenName:        rawchar "Dragon's Den@"
 IcePathName:           rawchar "Ice Path@"
+if DEF(_LOCALE_FR)
+PalletTownName:        rawchar "Bourg¯Palette@"
+else
 PalletTownName:        rawchar "Pallet Town@"
+endc
 ViridianCityName:      rawchar "Viridian¯City@"
 PewterCityName:        rawchar "Pewter City@"
 CeruleanCityName:      rawchar "Cerulean¯City@"
