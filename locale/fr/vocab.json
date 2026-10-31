@@ -1,0 +1,24 @@
+{
+  "names": ["Red", "Blue", "Olive", "Victoria", "Chen", "Pokémon", "Bourg Palette"],
+  "restore": {
+    "A plus": "À plus"
+  },
+  "maps": {
+    "PalletTown": {
+      "name": "Bourg Palette",
+      "en": "Pallet Town",
+      "items": [
+        {"fr": "Bourg Palette", "en": "Pallet Town", "note": "Official French name. Un bourg is a small market town.", "kind": "game"},
+        {"fr": "le labo", "en": "the lab", "note": "Everyday short form of le laboratoire.", "kind": "vocab"},
+        {"fr": "un garde du corps", "en": "a bodyguard", "note": "Plural: des gardes du corps. Only garde changes.", "kind": "vocab"},
+        {"fr": "un havre de paix", "en": "a haven of peace", "note": "Literary set phrase. The h is not pronounced.", "kind": "vocab"},
+        {"fr": "minable", "en": "pathetic, a loser", "note": "Insulting. Works as an adjective or a noun.", "kind": "vocab"},
+        {"fr": "À plus !", "en": "See you later!", "note": "Casual short form of à plus tard. The s is usually pronounced.", "kind": "phrase"},
+        {"fr": "retrouver quelqu'un", "en": "to meet up with someone", "note": "For someone you know. Rencontrer means meeting for the first time.", "kind": "vocab"},
+        {"fr": "avant de partir", "en": "before leaving", "note": "avant de + infinitive, where English uses -ing.", "kind": "phrase"},
+        {"fr": "toucher à", "en": "to touch, to mess with", "note": "à + les contracts to aux: toucher aux données.", "kind": "vocab"},
+        {"fr": "réfléchir", "en": "to think something over", "note": "Regular -ir verb: on réfléchit.", "kind": "vocab"}
+      ]
+    }
+  }
+}
